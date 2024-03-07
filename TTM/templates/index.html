@@ -1,0 +1,18 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Tourism Management </title>
+     <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+<a href="{% url 'Login' %}"> Login |</a>
+<a href="{% url 'Home' %}"> Home |</a>
+<br><br><br>
+{% block 'b1' %}
+  <h1 align="center"><font color="green"> Travel Tourism Management</font> </h1>
+{% endblock %}
+
+</body>
+</html>

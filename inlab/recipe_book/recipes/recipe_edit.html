@@ -1,0 +1,6 @@
+<!-- recipes/templates/recipes/recipe_edit.html -->
+<h2>Edit Recipe</h2>
+<form method="post" class="recipe-form">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save changes</button>
+</form>
